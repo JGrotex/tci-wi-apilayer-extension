@@ -1,0 +1,52 @@
+{
+  "name": "tibco-apilayer",
+  "title": "APILayer Connector",
+  "author": "TIBCO Software Inc. [JGrotex]",
+  "type": "flogo:connector",
+  "version": "1.2.0",
+  "display": {
+    "description": "This is a APILayer.com Connector",
+    "category": "APILayer",
+    "visible": true,
+    "smallIcon": "api.png"
+  },
+  "ref": "github.com/JGrotex/tci-wi-apilayer-extension/APILayer/connector/apilayer",
+  "keyfield": "name",
+  "settings": [
+    {
+      "name": "name",
+      "type": "string",
+      "required": true,
+      "display": {
+        "name": "Connection Name",
+        "description": "Name of the connection"
+      }
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "display": {
+        "name": "Description",
+        "description": "Connection description"
+      }
+    },
+    {
+      "name": "accessKeyId",
+      "type": "string",
+      "required": true,
+      "display": {
+        "name": "Access Key ID",
+        "description": "APILayer.com key ID for your user",
+        "type": "password"
+      }
+    }
+  ],
+  "actions": [
+    {
+      "name": "Connect",
+      "display": {
+        "readonly": true
+      }
+    }
+  ]
+}

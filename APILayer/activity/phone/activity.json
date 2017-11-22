@@ -1,0 +1,47 @@
+{
+    "name": "Phonevalidation",
+    "version": "1.2.0",
+    "title": "Phone validation",
+    "author": "TIBCO Software Inc. [JGrotex]",
+    "type": "flogo:activity",
+     
+    "display": {
+       "category": "APILayer",
+       "visible": true,
+       "smallIcon": "phone.png",
+       "description": "Activity returns if a Phonenumber is valid or invalid"
+    },
+ 
+    "ref": "github.com/JGrotex/tci-wi-apilayer-extension/APILayer/activity/phone",
+    "inputs": [
+           {
+            "name": "apiConnection",
+            "type": "object",
+            "required": true,
+            "display":{
+              "name": "APILayser Connection",
+              "description": "Select APILayer Connection",
+              "type": "connection"
+            },
+            "allowed":[]
+           },
+           {
+            "name": "phone",
+            "type": "string",
+            "required": true
+           }
+    ],
+  
+    "outputs": [
+        {"name": "valid","type": "boolean"},
+        {"name": "number","type": "string"},
+        {"name": "local_format","type": "string"},
+        {"name": "international_format", "type": "string"},
+        {"name": "country_prefix", "type": "string" },
+        {"name": "country_code", "type": "string" },
+        {"name": "country_name", "type": "string" },
+        {"name": "location", "type": "string" },
+        {"name": "carrier", "type": "string" },
+        {"name": "line_type", "type": "string" }
+    ]
+}
