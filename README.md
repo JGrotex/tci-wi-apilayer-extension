@@ -32,3 +32,6 @@ Sample Output Data
 ``json:
 {"valid":true,"number":"498003303000","local_format":"08003303000","international_format":"+498003303000","country_prefix":"+49","country_code":"DE","country_name":"Germany (Federal Republic of)","location":"","carrier":"","line_type":"toll_free"}
 ``
+
+<hr>
+<sub><b>Note:</b> more TCI Extensions can be found here: https://tibcosoftware.github.io/tci-awesome/ </sub>
