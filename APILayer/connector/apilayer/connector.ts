@@ -16,22 +16,21 @@ export class TibcoAPILayerConnectorContribution extends WiServiceHandlerContribu
         super();
     }
 
-   
     value = (fieldName: string, context: IConnectorContribution): Observable<any> | any => {
         return null;
     }
- 
+
     validate = (name: string, context: IConnectorContribution): Observable<IValidationResult> | IValidationResult => {
-      if( name === "Connect") {
+      if (name === "Connect") {
          let accessKeyId: IFieldDefinition;
-         
+
          for (let configuration of context.settings) {
-    		if( configuration.name === "accessKeyId") {
-    		   accessKeyId = configuration
-    		} 
-		 }
-		 
-         if( accessKeyId.value) {
+            if (configuration.name === "accessKeyId") {
+                accessKeyId = configuration;
+            }
+    }
+
+         if (accessKeyId.value) {
             // Enable Connect button
             return ValidationResult.newValidationResult().setReadOnly(false)
          } else {
@@ -42,25 +41,25 @@ export class TibcoAPILayerConnectorContribution extends WiServiceHandlerContribu
     }
 
     action = (actionName: string, context: IConnectorContribution): Observable<IActionResult> | IActionResult => {
-       if( actionName == "Connect") {
+       if (actionName === "Connect") {
           return Observable.create(observer => {
-         	let accessKeyId: IFieldDefinition;
-         
-         	for (let configuration of context.settings) {
-    			if( configuration.name === "accessKeyId") {
-    		   		accessKeyId = configuration;
-    			}
-		 	}
+            let accessKeyId: IFieldDefinition;
+
+            for (let configuration of context.settings) {
+                if (configuration.name === "accessKeyId") {
+                    accessKeyId = configuration;
+                }
+            }
 			// usually with Connect Test here. ... skipped for now!
 
 			// Successfully connected. Lets save the configuration.	
-  		    let actionResult = {
-				context: context,
+            let actionResult = {
+                context: context,
                 authType: AUTHENTICATION_TYPE.BASIC,
                 authData: {}
-            }
+            };
             observer.next(ActionResult.newActionResult().setSuccess(true).setResult(actionResult));
-		 });
+        });
        }
        return null;
     }

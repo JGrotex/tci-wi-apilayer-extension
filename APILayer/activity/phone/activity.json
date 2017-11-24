@@ -1,6 +1,6 @@
 {
     "name": "Phonevalidation",
-    "version": "1.2.0",
+    "version": "1.3.0",
     "title": "Phone validation",
     "author": "TIBCO Software Inc. [JGrotex]",
     "type": "flogo:activity",
@@ -8,7 +8,8 @@
     "display": {
        "category": "APILayer",
        "visible": true,
-       "smallIcon": "phone.png",
+       "smallIcon": "icons/ic-apilayer-phone.png",
+       "largeIcon": "icons/ic-apilayer-phone@2x.png",
        "description": "Activity returns if a Phonenumber is valid or invalid"
     },
  

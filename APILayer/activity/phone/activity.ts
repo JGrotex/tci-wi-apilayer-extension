@@ -44,7 +44,7 @@ export class PhoneActivityContribution extends WiServiceHandlerContribution {
                     observer.next(connectionRefs);
                 });
             });
-        } 
+        }
         return null;
     }
 
@@ -54,7 +54,7 @@ export class PhoneActivityContribution extends WiServiceHandlerContribution {
             if (connection.value === null) {
                 return ValidationResult.newValidationResult().setError("APILayer-Phone-MSG-1000", "APILayer Connection must be configured");
             }
-        } 
+        }
         return null;
     }
 }
