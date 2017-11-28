@@ -41,7 +41,7 @@ export class TibcoAPILayerConnectorContribution extends WiServiceHandlerContribu
     }
 
     action = (actionName: string, context: IConnectorContribution): Observable<IActionResult> | IActionResult => {
-       if (actionName === "Connect") {
+       if (actionName == "Connect") {
           return Observable.create(observer => {
             let accessKeyId: IFieldDefinition;
 
