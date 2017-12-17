@@ -1,8 +1,9 @@
 # TCI WI APILayer.com Extension
 first Version with just International Phonenumber validation, more to come ...
 
-Attached ZIP contains the first release v.1.3 and can just uploaded under 
-TIBCO Cloud Integration Extensions
+As the Connector is available any other offering of APILayer.Com should be easy to create.
+
+Attached ZIP contains the first release v.1.3 and can just uploaded under TIBCO Cloud Integration Extensions
 
 Please create your own 'free' Access Key on APILayer.com to enter into the Connector Details.
 
