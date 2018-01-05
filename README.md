@@ -1,4 +1,7 @@
 # TCI WI APILayer.com Extension
+
+[![Go Report Card](https://goreportcard.com/badge/github.com/JGrotex/tci-wi-apilayer-extension)](https://goreportcard.com/report/github.com/JGrotex/tci-wi-apilayer-extension) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 first Version with just International Phonenumber validation, more to come ...
 
 As the Connector is available any other offering of APILayer.Com should be easy to create.
