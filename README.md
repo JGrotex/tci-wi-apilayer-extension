@@ -5,7 +5,7 @@ As the Connector is available any other offering of APILayer.Com should be easy 
 
 Attached ZIP contains the first release v.1.3 and can just uploaded under TIBCO Cloud Integration Extensions
 
-Please create your own 'free' Access Key on APILayer.com to enter into the Connector Details.
+Please create your own 'free' Access Key on http://www.APILayer.com to enter into the Connector Details.
 
 ## Activities
 available Activities so far
