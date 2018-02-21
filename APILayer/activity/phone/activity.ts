@@ -1,8 +1,4 @@
-/*
- * Copyright © 2018. TIBCO Software Inc. [JGR]
- * This file is subject to the license terms contained
- * in the license file that is distributed with this file.
- */
+
 import { Observable } from "rxjs/Observable";
 import { Injectable, Injector, Inject } from "@angular/core";
 import { Http } from "@angular/http";
