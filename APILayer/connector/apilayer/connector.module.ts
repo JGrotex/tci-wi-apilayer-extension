@@ -5,7 +5,7 @@ import { CommonModule } from "@angular/common";
 import {TibcoAPILayerConnectorContribution} from "./connector";
 import {WiServiceContribution} from "wi-studio/app/contrib/wi-contrib";
 
-@NgModule({
+@NgModule({ 
   imports: [
   	CommonModule,
   	HttpModule,

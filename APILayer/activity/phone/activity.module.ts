@@ -20,5 +20,5 @@ import { WiServiceContribution} from "wi-studio/app/contrib/wi-contrib";
 })
 
 export default class APILayerPhoneActivityModule {
-
+ 
 }
